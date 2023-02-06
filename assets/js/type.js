@@ -41,6 +41,20 @@ $(document).ready(function(){
   });
 
   $('products-nav .nav-link').on('click', function(){
+   
     $(this).addClass('active').parent().siblings().children().removeClass('active')
   })
   });
+  $('.metric-btn').on('click', function(){
+    $(this).addClass('active').siblings().removeClass('active');
+    $('.metric-bmi').removeClass('d-none').siblings().addClass('d-none')
+  })
+
+  $('.bmi-table-btn').on('click', function(){
+    $(this).addClass('active').siblings().removeClass('active');
+    $('.bmi-table').removeClass('d-none').siblings().addClass('d-none')
+  })
+  $('.english-btn').on('click', function(){
+    $(this).addClass('active').siblings().removeClass('active');
+    $('.english-bmi').removeClass('d-none').siblings().addClass('d-none')
+  }) 

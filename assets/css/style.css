@@ -2274,20 +2274,27 @@ textarea {
     background-color:#76497952;
     border-bottom: 0pc;
     font-size: 14px;
+    cursor: pointer;
    
+}
+.nav-tabs li:hover{
+    background-color: #76497980;
 }
 .nav-tabs li.active{
     background-color: #764979;
     color: white;
 }
-.nav-tabs li a{
+.nav-tabs li span{
     color:#5b465ce0
 }
-.nav-tabs li.active a{
+.nav-tabs li.active span{
     color: white;
 }
-.nav-tabs li.active a:hover{
+.nav-tabs li.active span:hover{
     text-decoration: none;
     text-decoration-line: none;
     
+}
+.the-form td{
+    color: #6b6b6b;
 }
