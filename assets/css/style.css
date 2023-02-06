@@ -638,7 +638,7 @@ p{
     height: 390px;
 }
 .specialties_content::after {
-    content: "\f058";
+    content: "\f012c";
     height: 76px;
     width: 76px;
     background-color: var(--e-global-color-secondary);
@@ -652,6 +652,10 @@ p{
     line-height: 64px;
     color: var(--e-global-color-white);
     font-family: 'Font Awesome 6 Free';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: normal normal normal 24px/1 "Material Design Icons";
 }
 .s1::after {
     top: 110px;
@@ -673,7 +677,7 @@ p{
     text-align: left;
 }
 .specialties_content2::after {
-    content: "\f058";
+    content: "\f012c";
     height: 76px;
     width: 76px;
     background-color: var(--e-global-color-secondary);
@@ -686,7 +690,10 @@ p{
     font-size: 42px;
     line-height: 64px;
     color: var(--e-global-color-white);
-    font-family: 'Font Awesome 6 Free';
+   font: normal normal normal 24px/1 "Material Design Icons";
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 .s5{
     padding-top: 110px;
