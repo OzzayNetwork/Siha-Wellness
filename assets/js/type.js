@@ -4,9 +4,36 @@ window.ityped.init(document.querySelector('.ityped'),{
     backSpeed: 150,
     loop: true
 })
+$(document).ready(function(){
+    var packagesOwl = $('.pricing');
+    packagesOwl.owlCarousel({
+        loop:true,
+        items:3,
+        margin:10,
+        center:true,
+        nav:false,
+        autoplay:true,
+        autoplayTimeout:8000,
+        autoplayHoverPause:true,
+        responsiveClass:true,
+        lazyLoad:true,
+        loop:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:2,
+            },
+            1000:{
+                items:3,
+            }
+        }      
+    }) 
+})
 
 $(document).ready(function(){
-    var packagesOwl = $('.owl-carousel');
+    var packagesOwl = $('.products');
     packagesOwl.owlCarousel({
         loop:true,
         items:3,
@@ -31,6 +58,26 @@ $(document).ready(function(){
             }
         }      
     })
+
+    $('.owl-carousel-2').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+
+    //pricing owl
+    
 
      // Custom Button
   $('.nav-next').click(function() {

@@ -843,3 +843,15 @@ a.item-link{margin-top: 20px; display: inline-block}
 		font-size: 18px;
 	}
 }
+.pricing_plans_section .pricing_plans_box_lower_portion li{
+	font-size: 15px;
+}
+.pricing_plans_section .pricing_plans_span_wrapper .price{
+	font-size: 35px;
+}
+.pricing_plans_box_lower_portion {
+    padding: 70px 40px 30px;
+}
+.pricing_plans_section .item-navigator span{
+	top: 50%;
+}
