@@ -2196,3 +2196,98 @@ textarea {
 .single-post .single-post-heading {
     font-size: 30px !important;
 }
+.Bmi-section{
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    /* background-image: url(../images/banner_section_background.jpg); */
+}
+.text-primary{
+    color: #543458 !important;
+}
+.bmi-calculator-form-container{
+    z-index: 10000;
+    padding: 1rem;
+    
+}
+.bmi-calculator-form{
+    z-index: 100;
+    background-color: white;
+}
+.bmi-calculator-form p,.bmi-calculator-form label{
+    color: #6b6b6b;
+    font-size: 16px;
+}
+.bmi-calculator-form h2{
+    margin-bottom: 18px;
+}
+.the-form .form-control{
+    border-radius: 0;
+    box-shadow: none;
+    height: 40px;
+    border: 1px solid #eeeeee;
+    font-size: small;
+}
+.the-form{
+    padding: 1rem;
+    border:1px solid #d3c4d4;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+.Bmi-section .bmi-btn{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    padding: 16px 40px;
+    text-align: center;
+    color: var(--e-global-color-white);
+    display: inline-block;
+    background-color: var(--e-global-color-secondary);
+    border-radius: 35px 0px 35px 0px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    position: relative;
+}
+.Bmi-section .bmi-btn::before{
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    content: '';
+    color: var(--e-global-color-secondary);
+    background-color: var(--e-global-color-white);
+    transition: all 0.4s cubic-bezier(0.12, 0, 0.38, 1) 0s;
+}
+.nav-tabs{
+    border-bottom: 0px;
+    margin-top: 2rem;
+}
+.nav-tabs li{
+    padding: 0.5rem 1rem;
+    text-align: center;
+    background-color:#76497952;
+    border-bottom: 0pc;
+    font-size: 14px;
+   
+}
+.nav-tabs li.active{
+    background-color: #764979;
+    color: white;
+}
+.nav-tabs li a{
+    color:#5b465ce0
+}
+.nav-tabs li.active a{
+    color: white;
+}
+.nav-tabs li.active a:hover{
+    text-decoration: none;
+    text-decoration-line: none;
+    
+}
