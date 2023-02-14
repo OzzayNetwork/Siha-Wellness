@@ -35,7 +35,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     var packagesOwl = $('.products');
     packagesOwl.owlCarousel({
-        loop:true,
+        loop:false,
         items:3,
         margin:100,
         center:true,
@@ -45,7 +45,7 @@ $(document).ready(function(){
         autoplayHoverPause:true,
         responsiveClass:true,
         lazyLoad:true,
-        loop:true,
+        loop:false,
         responsive:{
             0:{
                 items:1,
@@ -105,3 +105,40 @@ $(document).ready(function(){
     $(this).addClass('active').siblings().removeClass('active');
     $('.english-bmi').removeClass('d-none').siblings().addClass('d-none')
   }) 
+
+  //nav clicking
+  $(".yoga-nav").on('click', function(){
+    event.preventDefault()
+    $(this).addClass('active').parent().siblings().children().removeClass('active')
+    $('#yoga-service').removeClass('d-none').siblings('.siha-services').addClass('d-none')
+  })
+
+  $(".yoga-plus-nav").on('click', function(){
+    event.preventDefault()
+    $(this).addClass('active').parent().siblings().children().removeClass('active')
+    $('#yoga-plus-service').removeClass('d-none').siblings('.siha-services').addClass('d-none')
+  })
+
+  $(".zumba-nav").on('click', function(){
+    event.preventDefault()
+    $(this).addClass('active').parent().siblings().children().removeClass('active')
+    $('#zumba-service').removeClass('d-none').siblings('.siha-services').addClass('d-none')
+  })
+
+  $(".physiotherapy-nav").on('click', function(){
+    event.preventDefault()
+    $(this).addClass('active').parent().siblings().children().removeClass('active')
+    $('#physiotherapy-service').removeClass('d-none').siblings('.siha-services').addClass('d-none')
+  })
+
+  $(".private-nav").on('click', function(){
+    event.preventDefault()
+    $(this).addClass('active').parent().siblings().children().removeClass('active')
+    $('#private-service').removeClass('d-none').siblings('.siha-services').addClass('d-none')
+  })
+
+  $(".challenge-nav").on('click', function(){
+    event.preventDefault()
+    $(this).addClass('active').parent().siblings().children().removeClass('active')
+    $('#challenge-service').removeClass('d-none').siblings('.siha-services').addClass('d-none')
+  })
