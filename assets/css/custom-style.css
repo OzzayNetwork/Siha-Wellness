@@ -855,3 +855,47 @@ a.item-link{margin-top: 20px; display: inline-block}
 .pricing_plans_section .item-navigator span{
 	top: 50%;
 }
+
+.table-type-1 table tr:first-child > th, .table-type-2 table tr > th {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #333;
+    background: #e1ccad;
+    text-transform: uppercase;
+}
+[class*="table-type"] table tr > th, [class*="table-type"] table tr.bg-cell > td {
+    font-size: 14px;
+    font-weight: 300;
+}
+[class*="table-type"] table tr > td {
+    font-weight: 300;
+    font-size: 14px;
+}
+[class*="table-type"] table tr > td, [class*="table-type"] table tr > th {
+    padding: 13px 25px;
+    text-align: left;
+}
+.table-type-1:not(.responsive-table) table tr:nth-child(2n+1) > td, .table-type-1.responsive-table table tr:nth-child(2n) > td {
+    background: #f7f2ea;
+}
+
+.btn {
+    padding: 7px 30px 6px;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    background: #764979;
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    line-height: 26px;
+    letter-spacing: 0.8px;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+.table td a.link-text{
+	color:#333
+}
