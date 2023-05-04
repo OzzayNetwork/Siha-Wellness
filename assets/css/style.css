@@ -2324,3 +2324,14 @@ textarea {
 .font-12px{
     font-size: 12px !important;
 }
+.pattern-cont{
+    position: absolute;
+    height: 70%;
+    width: 70%;
+    right: -20%;
+    bottom: 0px;
+    opacity: 5%;
+}
+.aboutus_content{
+    overflow: hidden;
+}
