@@ -142,3 +142,48 @@ $(document).ready(function(){
     $(this).addClass('active').parent().siblings().children().removeClass('active')
     $('#challenge-service').removeClass('d-none').siblings('.siha-services').addClass('d-none')
   })
+
+  var clickedText
+
+  // moment js codes start here
+  $(document).ready(function(){
+    //TUE NOVEMBER 14, 2017
+    var todayDate=moment().format('dddd MMM DD, YYYY')
+    var todayDay=moment().format('dddd')
+    var activeClassName="table-"+todayDay
+    $('.this-year').text(moment().format('yyyy'))
+    //alert("today is "+todayDay)
+    $('.today-date').text(todayDate)
+    //alert(todayDate)
+    $('.timetable-navbar .nav-item').each(function(index){
+      var theDay=$(this).text()
+      //alert(theDay)
+      if(theDay===todayDay){
+        $(this).addClass('active').text(theDay+' (Today)')
+      }
+    })
+
+    $('.day-table').each(function(index){
+     var isclassPresent=$(this).hasClass(activeClassName)
+      if(isclassPresent===true){
+        $(this).removeClass('d-none')
+      }
+    })
+  })
+
+  //changing timetable 
+  $(document).ready(function(){
+    $('.timetable-navbar .nav-item').on('click', function(event){
+      event.preventDefault()
+      $(this).addClass('active').siblings().removeClass('active')
+      clickedText=$(this).text()
+      var activeClassName="table-"+clickedText
+
+      $('.day-table').each(function(index){
+        var isclassPresent=$(this).hasClass(activeClassName)
+         if(isclassPresent===true){
+           $(this).removeClass('d-none').siblings('.day-table').addClass('d-none')
+         }
+       })
+    })
+  })
