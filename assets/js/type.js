@@ -173,6 +173,13 @@ $(document).ready(function(){
 
   //changing timetable 
   $(document).ready(function(){
+
+    $('#youtube-vid').magnificPopup({
+      type:'inline',
+      midClick:true,
+      
+    })
+
     $('.timetable-navbar .nav-item').on('click', function(event){
       event.preventDefault()
       $(this).addClass('active').siblings().removeClass('active')
@@ -187,3 +194,19 @@ $(document).ready(function(){
        })
     })
   })
+
+  $(document).ready(function() {
+    $('.youtube-vid').magnificPopup({
+      type:'inline'
+    });
+
+    $('.test-popup-link').magnificPopup({
+      items:{
+        src: '#youtube-vid',
+        type: 'inline',
+        // midClick:true
+      }
+      // other options
+    });
+
+  });
