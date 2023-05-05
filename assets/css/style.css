@@ -24,6 +24,8 @@ Project: Yogastic
 
 body {
     font-family: 'Karla', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
+    /* font-family: 'Nunito Sans', sans-serif; */
 }
 :root {
     --e-global-color-primary: #242424;
@@ -54,7 +56,7 @@ h2{
     font-weight: 700;
 }
 h3{
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 22px;
     line-height: 55px;
     font-weight: 700;
@@ -402,7 +404,7 @@ p{
 /* Home Page Our Services Section Style */
 
 .services_section{
-    padding: 120px 0 130px;
+    /* padding: 120px 0 130px; */
     position: relative;
 }
 .services_section .services_content{
@@ -447,6 +449,9 @@ p{
 }
 .services_box_content .services_box_lower_portion h3{
     margin-bottom: 0;
+    font-family: 'Tangerine', cursive;
+    color: #764979;
+    font-size: 44px;
 }
 .services_box_content .services_box_lower_portion p{
     font-size: 18px;
@@ -526,6 +531,9 @@ p{
     color: var(--e-global-color-secondary);
     margin-left: 16px;
     margin-bottom: 35px;
+
+    font-family: 'Tangerine', cursive;
+
 }
 .aboutus_line_wrapper{
     position: relative;
@@ -619,11 +627,11 @@ p{
     position: relative;
 }
 .specialties_content .specialties_name {
-    font-family: 'Playfair Display', serif;
-    font-size: 18px;
+    font-family: 'Tangerine', cursive;
+    font-size: 35px;
     line-height: 24px;
     font-weight: 700;
-    color: var(--e-global-color-primary);
+    color: #764979;
     margin-bottom: 6px;
 }
 .specialties_content .specialties_paragraph {
@@ -948,6 +956,11 @@ textarea {
     color: var(--e-global-color-primary);
     text-align: center;
     margin-bottom: 0px;
+    text-transform: capitalize;
+    font-size: xx-large;
+    font-family: 'Tangerine', cursive;
+    /* font-family: 'Niconne', cursive; */
+
 }
 .pricing_plans_box_lower_portion ul{
     margin-bottom: 16px;
@@ -969,10 +982,10 @@ textarea {
     margin-bottom: 12px;
 }
 .pricing_plans_box_lower_portion .pricing_plans_span_wrapper .price{
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 48px;
     line-height: 55px;
-    font-weight: 700;
+    font-weight: 300;
     color: var(--e-global-color-secondary);
 }
 .pricing_plans_box_lower_portion .pricing_plans_span_wrapper .per_month{
@@ -998,6 +1011,7 @@ textarea {
     background-color: var(--e-global-color-soft-orange);
     border-radius: 32px 0px 32px 0px;
     transition: all 0.3s ease-in-out;
+    display: none;
 }
 .pricing_plans_box_content:hover .pricing_plans_box_lower_portion .enroll_now_btn {
     color: var(--e-global-color-white);
@@ -1311,6 +1325,8 @@ textarea {
 .middle-portion h4{
     color: var(--e-global-color-white);
     margin-bottom: 16px;
+    font-family: 'Tangerine', cursive;
+    font-size: xx-large;
 }
 .middle-portion ul{
     margin-bottom: 0;
@@ -2334,4 +2350,7 @@ textarea {
 }
 .aboutus_content{
     overflow: hidden;
+}
+.font-29px{
+    font-size: 29px !important;
 }
