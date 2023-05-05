@@ -2374,3 +2374,8 @@ textarea {
     align-items: center;
     width: 100%;
 }
+
+.yt-video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
