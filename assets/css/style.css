@@ -135,7 +135,7 @@ p{
     padding-right: 0;
 }
 .navbar-nav .nav-item a{
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif; */
     font-size: 18px;
     line-height: 18px;
     font-weight: 400;
