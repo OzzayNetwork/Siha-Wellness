@@ -1253,7 +1253,7 @@ textarea {
     outline: none;
     border: none;
 }
-.subscribe_content button {
+.subscribe_content button,.subscribe_content a {
     font-size: 20px;
     line-height: 20px;
     font-weight: 500;
@@ -1269,17 +1269,17 @@ textarea {
     overflow: hidden;
     position: relative;
 }
-.subscribe_content button:hover {
+.subscribe_content button:hover,.subscribe_content a:hover {
     color: var(--e-global-color-secondary);
     background-color: var(--e-global-color-white);
     transform: translateY(-10px);
 }
-.subscribe_content button:hover:before {
+.subscribe_content button:hover:before,.subscribe_content a:hover:before {
 	left: 0%;
 	right: auto;
 	width: 100%;
 }
-.subscribe_content button:before {
+.subscribe_content button:before,.subscribe_content a:before {
 	display: block;
 	position: absolute;
 	top: 0px;
@@ -2379,3 +2379,9 @@ textarea {
     aspect-ratio: 16 / 9;
     width: 100%;
   }
+
+  .subscribe_content a:hover {
+    color: var(--e-global-color-secondary);
+    background-color: var(--e-global-color-white);
+    transform: translateY(-10px);
+}
