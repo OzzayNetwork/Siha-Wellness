@@ -282,22 +282,18 @@ $(document).ready(function(){
 
     $('.calculate-bmi').on('click', function(e){
       e.preventDefault()
+      height=parseFloat($('.height-cm').val())
+      weight=parseFloat($('.weight-kgs').val())
       $('.calculated-bmi-txt').text(getBMI())
+     // alert(height)
     })
 
-    //calculating using metric version
-    $('.height-cm').on('change', function(){
-      height=parseFloat($(this).val())
-      
-    })
+    
 
     $('.text-age').on('change', function(){
       age=parseFloat($(this).val())
     })
 
-    $('.weight-kgs').on('change', function(){
-      weight=parseFloat($(this).val())
-    })
 
     $('[name="bmi_metric_gender"]').on("change", function(){
       gender=parseFloat($(this).val())
