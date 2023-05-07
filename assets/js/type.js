@@ -45,7 +45,7 @@ $(document).ready(function(){
         autoplayHoverPause:true,
         responsiveClass:true,
         lazyLoad:true,
-        loop:false,
+        loop:true,
         responsive:{
             0:{
                 items:1,
@@ -209,4 +209,98 @@ $(document).ready(function(){
       // other options
     });
 
+  });
+
+  $(document).ready(function() {
+    //calculating BMI
+    var weight,height,age,gender, version="Metric",bmi
+
+    function getBMI(){
+
+      height=height/100
+      bmi=(weight / (height*height))
+
+      $('.calculated-bmi').removeClass('alert-success').removeClass('alert-info').removeClass('alert-warning').removeClass('alert-danger').removeClass('alert-secondary')
+
+      if(bmi>40){
+        //overweight
+        $('.calculated-bmi').addClass('alert-danger')
+        $('.bmi-class').text('Your are Overweight')
+
+      }
+      if(bmi<16){
+        //servere thinness
+        $('.calculated-bmi').addClass('alert-danger')
+        $('.bmi-class').text('Your are Serverly Thin')
+      }
+
+      if(bmi>15){
+        if(bmi>=16){
+          //moderate thinness
+          if(bmi<17){
+            $('.calculated-bmi').addClass('alert-warning')
+            $('.bmi-class').text('Your are Moderatley Thin')
+          }
+        }
+
+        if(bmi>17){
+          //mild thinness
+          if(bmi<=18.5){
+            $('.calculated-bmi').addClass('alert-secondary')
+            $('.bmi-class').text('You are Mild thin')
+          }
+        }
+
+        if(bmi>18.5){
+          // normal
+          if(bmi<=25){
+            $('.calculated-bmi').addClass('alert-success')
+            $('.bmi-class').text('Your BMi is Normal')
+          }
+        }
+
+        if(bmi>25){
+          //overweight
+          if(bmi<=30){
+            $('.calculated-bmi').addClass('alert-secondary')
+            $('.bmi-class').text('Your are Overweight')
+          }
+        }
+
+        if(bmi>30){
+          //obese class 1
+          if(bmi<=40){
+            $('.calculated-bmi').addClass('alert-warning')
+            $('.bmi-class').text('Your are Obese Class 1')
+          }
+        }
+      }
+
+      $('.calculated-bmi').removeClass("d-none")
+      return "Your BMI is "+bmi.toFixed(2)
+    }
+
+    $('.calculate-bmi').on('click', function(e){
+      e.preventDefault()
+      $('.calculated-bmi-txt').text(getBMI())
+    })
+
+    //calculating using metric version
+    $('.height-cm').on('change', function(){
+      height=parseFloat($(this).val())
+      
+    })
+
+    $('.text-age').on('change', function(){
+      age=parseFloat($(this).val())
+    })
+
+    $('.weight-kgs').on('change', function(){
+      weight=parseFloat($(this).val())
+    })
+
+    $('[name="bmi_metric_gender"]').on("change", function(){
+      gender=parseFloat($(this).val())
+    })
+    
   });

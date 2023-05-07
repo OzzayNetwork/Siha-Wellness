@@ -68,18 +68,18 @@
                                 <a class="nav-link" href="index-2.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html">About Us</a>
+                                <a class="nav-link" href="#about">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="services.html">Services</a>
-                            </li>
-                           
-                            <li class="nav-item">
-                                <a class="nav-link" href="services.html">Pricess</a>
+                                <a class="nav-link" href="#services">Services</a>
                             </li>
                            
                             <li class="nav-item">
-                                <a class="nav-link" href="team.html">Schedule</a>
+                                <a class="nav-link" href="#prices">Pricess</a>
+                            </li>
+                           
+                            <li class="nav-item">
+                                <a class="nav-link" href="#schedule">Schedule</a>
                             </li>
                            
                             <li class="nav-item">
@@ -148,7 +148,7 @@
     </section>
 </div>
 <!-- OUR SERVICES SECTION -->
-<section class="services_section aboutus_content">
+<section class="services_section aboutus_content" id="services">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -241,7 +241,7 @@
     </div>
 </section>
 <!-- ABOUT US SECTION -->
-<section class="aboutus_section">
+<section class="aboutus_section" id="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
@@ -375,25 +375,25 @@
                               </nav>
                            </div>
                            <div class="col-12">
-                                <div class="the-form metric-bmi">
+                                <form class="the-form metric-bmi">
                                     <div class="col-12 mb-4">
                                         <div>
                                             <label for="" class="font-weight-bold">Weight</label>
-                                            <input type="text" class="form-control" placeholder="KGs">
+                                            <input type="text" class="form-control weight-kgs" placeholder="KGs" required>
                                         </div>
                                     </div>
     
                                     <div class="col-12 mb-4">
                                         <div>
                                             <label for="" class="font-weight-bold">Height</label>
-                                            <input type="text" class="form-control" placeholder="CM">
+                                            <input type="text" class="form-control height-cm" placeholder="CM" required>
                                         </div>
                                     </div>
     
                                     <div class="col-12 mb-4">
                                         <div>
-                                            <label for="" class="font-weight-bold">Age</label>
-                                            <input type="text" class="form-control" placeholder="Enter your Age">
+                                            <label for="" class="font-weight-bold ">Age</label>
+                                            <input type="text" class="form-control text-age" placeholder="Enter your Age">
                                         </div>
                                     </div>
     
@@ -410,11 +410,20 @@
                                       </div>
 
                                       <div class="col-12">
+
+                                        <div class="alert alert-primary calculated-bmi d-none text-capitalize" role="alert">
+                                            <p class="calculated-bmi-txt">-</p>
+                                            <p class="mb-0 bmi-class">-</p>
+                                        </div>
+                                       
+                                      </div>
+
+                                      <div class="col-12">
                                         <div class="btn_wrapper ">
-                                            <button type="submit" class="bmi-btn" name="get_started" id="">Calculate</button>
+                                            <button type="submit" class="bmi-btn calculate-bmi" name="get_started" id="">Calculate</button>
                                         </div>
                                       </div>
-                                </div>
+                                </form>
 
                                 <div class="the-form english-bmi d-none">
                                     <div class="col-12 mb-4">
@@ -571,7 +580,7 @@
     </div>
 </section>
 <!-- PRICING PLANS SECTION -->
-<section class="pricing_plans_section pb-5 mb-5 d-non">
+<section class="pricing_plans_section pb-5 mb-5 d-non" id="prices">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -1892,7 +1901,7 @@
     </div>
 </section>
 
-<section class="achievement_section">
+<section class="achievement_section" id="schedule">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -1937,7 +1946,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>06:00 AM - 07:30 AM </div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -1949,7 +1958,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>06:15 AM - 07:15 AM  </div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -1961,7 +1970,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>08:30 AM - 10:00 AM  </div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -1987,7 +1996,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>06:00 AM - 07:30 AM </div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -1999,7 +2008,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>08:30 AM - 10:00 AM</div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -2011,7 +2020,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>08:30 AM - 10:00 AM  </div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -2037,7 +2046,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>06:00 AM - 07:30 AM </div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -2049,7 +2058,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>06:15 AM - 07:15 AM </div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -2061,7 +2070,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>08:30 AM - 10:00 AM  </div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -2087,7 +2096,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>06:00 AM - 07:30 AM </div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -2099,7 +2108,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>08:30 AM - 10:00 AM </div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -2111,7 +2120,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>08:30 AM - 09:30 AM </div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -2137,7 +2146,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>06:00 AM - 07:30 AM </div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -2149,7 +2158,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>06:15 AM - 07:15 AM  </div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -2161,7 +2170,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>08:30 AM - 10:00 AM </div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -2187,7 +2196,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>07:30 AM - 09:00 AM  </div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -2199,7 +2208,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>08:15 AM - 09:15 AM </div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -2211,7 +2220,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>09:30 AM - 10:30 AM </div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -2237,7 +2246,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>07:30 AM - 09:00 AM  </div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -2249,7 +2258,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>10:30 AM - 12:00 PM</div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -2261,7 +2270,7 @@
                         <div class="d-flex justify-content-between align-items-center">
     
                           <div>04:00 PM - 05:00 PM </div>
-                          <a href="tell:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
+                          <a href="tel:+254 713 415 262 " class="btn btn-small">Call For Enquaries</a>
     
                         </div>
                       </td>
@@ -2554,7 +2563,7 @@
 
                         <form method="POST">
                             <div class="form-row">
-                                <button href="tel:+254713415262" type="submit" name="btnsubmit" id="submitbutton">Give Us a call</button>
+                                <a href="tel:254713415262" type="submit" name="btnsubmit" id="submitbutton">Give Us a call</a>
                             </div>
                         </form>
                     </div>
@@ -2597,16 +2606,16 @@
                         <h4>Quick Links</h4>
                         <ul class="list-unstyled">
                             <li>
-                                <a href="index-2.html">Home</a>
+                                <a href="index.html">Home</a>
                             </li>
                             <li>
-                                <a href="about.html">About Us</a>
+                                <a href="#about">About Us</a>
                             </li>
                             <li>
-                                <a href="services.html">Services</a>
+                                <a href="#services">Services</a>
                             </li>
                             <li>
-                                <a href="team.html">Team</a>
+                                <a href="#prices">Pricing</a>
                             </li>
                             <li>
                                 <a href="contact.html">Contact Us</a>
